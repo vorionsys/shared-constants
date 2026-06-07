@@ -133,7 +133,7 @@ COGNIGATE_DOMAINS.main;                // "https://cognigate.dev"
 API_ENDPOINTS.cognigate.production;    // "https://cognigate.dev/v1"
 API_ENDPOINTS.agentAnchor.sandbox;     // "https://sandbox.agentanchorai.com/v1"
 VORION_EMAILS.security;               // "security@vorion.org"
-GITHUB.vorion.mainRepo;               // "https://github.com/vorionsys/vorion"
+GITHUB.vorion.mainRepo;               // "https://github.com/vorionsys"
 NPM_PACKAGES.vorion.sharedConstants;   // "@vorionsys/shared-constants"
 ```
 

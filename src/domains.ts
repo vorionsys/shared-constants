@@ -154,7 +154,7 @@ export const GITHUB = {
   /** Vorion organization */
   vorion: {
     org: 'https://github.com/vorionsys',
-    mainRepo: 'https://github.com/vorionsys/vorion',
+    mainRepo: 'https://github.com/vorionsys',
   },
 
   /** Agent Anchor AI (if separate) */
