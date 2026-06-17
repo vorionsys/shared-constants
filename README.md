@@ -1,5 +1,9 @@
 # @vorionsys/shared-constants
 
+[![npm](https://img.shields.io/npm/v/@vorionsys/shared-constants)](https://www.npmjs.com/package/@vorionsys/shared-constants)
+[![CI](https://img.shields.io/github/actions/workflow/status/vorionsys/shared-constants/ci.yml)](https://github.com/vorionsys/shared-constants/actions/workflows/ci.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
+
 Single source of truth for the Vorion ecosystem -- canonical trust tiers, domain configuration, capability definitions, rate limits, error codes, API versions, product catalog, and UI themes.
 
 ## Installation
