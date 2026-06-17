@@ -63,6 +63,28 @@ export {
 } from './tiers';
 
 // =============================================================================
+// TIER RECONCILIATION (CAR-5 legacy <-> T0-T7, observation ceiling, effectiveTier)
+// =============================================================================
+
+export {
+  CarLegacyTier,
+  CAR_LEGACY_TIERS,
+  CAR_TO_T,
+  T_TO_CAR,
+  carTierToTrustTier,
+  trustTierToCarTier,
+  OBS_MAXTIER,
+  toT,
+  effectiveTier,
+  trustLabel,
+  obsLabel,
+  carLegacyLabel,
+  type ObservationTier,
+  type TierClaim,
+  type EffectiveTierInput,
+} from './tier-reconciliation';
+
+// =============================================================================
 // DOMAINS & URLS
 // =============================================================================
 
