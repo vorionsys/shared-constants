@@ -89,6 +89,7 @@
     "url": "https://github.com/vorionsys/basis-spec/discussions"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@types/node": "^22.19.20",
     "tsup": "^8.0.0",
     "typescript": "^5.7.0",
