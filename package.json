@@ -1,6 +1,6 @@
 {
   "name": "@vorionsys/shared-constants",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Shared constants for Vorion ecosystem - single source of truth for tiers, domains, and configuration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

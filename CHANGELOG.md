@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.0.0
+
+### Major Changes
+
+- c9ce687: BREAKING: Remove the `manifest` export (`MANIFEST`, `getTestCountDisplay`, `getCoverageDisplay`, `getComplianceStatus`, `isComplianceSubmitted`, `getManifestAgeDays`, and the `ProjectManifest` / `TestMetrics` / `ComplianceEntry` / `ReleaseInfo` / `PostureInfo` types). Project-claim metrics no longer belong in the shared-constants surface; consumers should source release/compliance metrics from their own manifest.
+
+  Added: `tier-reconciliation` module (`effectiveTier`, `carTierToTrustTier`, `trustTierToCarTier`, CAR-5 legacy ↔ T0–T7 maps, observation-tier ceiling helpers).
+
+  Also: enable npm provenance attestation + trusted-publisher (OIDC) configuration and correct package metadata (homepage, bugs, author, files).
+
+  Trust tiers, thresholds, and all other exports are unchanged.
+
 All notable changes to `@vorionsys/shared-constants` will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
@@ -8,21 +20,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.2] - 2026-02-17
 
 ### Fixed
+
 - Build command no longer includes test files in dist output (removed ~632 KB of vitest chunks from tarball)
 
 ## [1.0.1] - 2026-02-14
 
 ### Fixed
+
 - Canonical trust tier alignment: T0=Sandbox, T1=Observed, T2 max=499, T3 min=500
 - Broken link fixes in documentation references
 
 ### Changed
+
 - Standardized package metadata and README for npm publish readiness
 - Aligned license to Apache-2.0 across all packages
 
 ## [1.0.0] - 2026-02-04
 
 ### Added
+
 - **Trust Tiers**: Complete 8-tier model (T0 Sandbox through T7 Autonomous) with score ranges, names, descriptions, colors, and helper functions (`scoreToTier`, `getTierName`, `getTierColor`, `meetsTierRequirement`, `parseTier`, etc.)
 - **Domains**: All Vorion, Agent Anchor, and Cognigate domain constants, API endpoints (production/staging/sandbox), email addresses, GitHub URLs, npm package names, and domain aliases
 - **Capabilities**: 20 tier-gated capability definitions across 7 categories (DATA_ACCESS, API_ACCESS, CODE_EXECUTION, AGENT_INTERACTION, RESOURCE_MANAGEMENT, GOVERNANCE, ADMIN) with helper functions for lookup, filtering, and availability checks
