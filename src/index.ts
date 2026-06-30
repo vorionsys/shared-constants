@@ -260,7 +260,7 @@ export {
 // =============================================================================
 
 /** Package version */
-export const VERSION = '1.0.3';
+export const VERSION = '2.0.0';
 
 /** Last updated date */
-export const LAST_UPDATED = '2026-02-16';
+export const LAST_UPDATED = '2026-06-30';
